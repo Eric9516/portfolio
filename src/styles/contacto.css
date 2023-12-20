@@ -31,3 +31,12 @@ input[type="submit"]:hover,
 button:hover {
 	background-color: rgb(26, 137, 26);
 }
+
+@media screen and (max-width: 767px) {
+	.contacto .form_contacto {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+}

@@ -21,6 +21,14 @@ export const MisRutas = () => {
 					<Route path="/servicios" element={<Servicios />} />
 					<Route path="/curriculum" element={<Curriculum />} />
 					<Route path="/contacto" element={<Contacto />} />
+					<Route
+						path="/*"
+						element={
+							<div className="error">
+								<h1>Error 404</h1>
+							</div>
+						}
+					/>
 				</Routes>
 			</section>
 

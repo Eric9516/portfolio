@@ -58,6 +58,7 @@
 }
 
 .header a:hover {
+	font-weight: bold;
 	color: #fa4529;
 }
 
