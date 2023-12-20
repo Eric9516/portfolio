@@ -1,0 +1,71 @@
+.inicio h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: 400;
+	font-size: 50px;
+	margin-bottom: 0;
+}
+
+.inicio strong {
+	color: #fa4529;
+}
+
+.inicio h2 {
+	color: rgb(98, 98, 97);
+	font-weight: lighter;
+}
+
+.inicio a {
+	color: #fff;
+	font-size: 0.7em;
+	padding: 10px;
+	margin-left: 5px;
+	border-radius: 10px;
+	background-color: #fa4529;
+	text-decoration: none;
+	transition: all 300ms;
+}
+
+.inicio a:hover {
+	background-color: rgb(26, 137, 26);
+}
+
+.inicio .heading {
+	font-size: 40px;
+	font-weight: 500;
+	font-style: italic;
+	margin-bottom: 0;
+	color: #000;
+}
+
+.inicio p {
+	color: #fa4529;
+}
+
+@media only screen and (max-width: 768px) {
+	.inicio h1 {
+		font-size: 40px;
+	}
+
+	.inicio a {
+		font-size: 0.6em;
+	}
+
+	.inicio .heading {
+		font-size: 30px;
+	}
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 480px) {
+	.inicio h1 {
+		font-size: 30px;
+	}
+
+	.inicio a {
+		font-size: 0.5em;
+	}
+
+	.inicio .heading {
+		font-size: 20px;
+	}
+}

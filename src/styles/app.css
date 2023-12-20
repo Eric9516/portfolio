@@ -1,0 +1,17 @@
+.div_padre {
+	width: 85%;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+	.div_padre {
+		width: 90%;
+	}
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 480px) {
+	.div_padre {
+		width: 95%;
+	}
+}

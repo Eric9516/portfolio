@@ -1,0 +1,149 @@
+.header {
+	display: flex;
+	height: 132px;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 2px solid #000;
+	margin-bottom: 35px;
+}
+
+.header .logo {
+	flex-grow: 2;
+	display: flex;
+}
+
+.header .logo span {
+	display: block;
+	font-size: 60px;
+	font-weight: bold;
+	margin-top: -2px;
+}
+
+.header .logo h3 {
+	display: block;
+	flex-basis: 40px;
+	margin-left: 10px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.header .navegacion {
+	flex-grow: 1;
+}
+
+.header .navegacion ul {
+	height: 132px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	list-style: none;
+}
+
+.header li {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 17px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.header li:last-child {
+	margin-right: 0;
+}
+
+.header li a {
+	color: black;
+	text-decoration: none;
+	transition: all 300ms;
+}
+
+.header a:hover {
+	color: #fa4529;
+}
+
+.header .active {
+	color: #fa4529;
+}
+
+.header {
+	position: relative;
+}
+
+.menu-button {
+	display: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	background-color: #000;
+	margin: 5px 0;
+}
+
+@media only screen and (max-width: 768px) {
+	.header .navegacion {
+		display: none;
+	}
+
+	.menu-button {
+		display: block;
+	}
+
+	.navegacion.show_menu {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 70px;
+		right: 0;
+		background-color: #fff;
+		border: 2px solid #000;
+		padding: 10px;
+		width: 100%;
+		margin-top: 40px;
+	}
+
+	.navegacion.show_menu ul {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		height: auto;
+	}
+
+	.navegacion.show_menu li {
+		margin: 10px 0;
+	}
+
+	.overlay {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 1000;
+		pointer-events: none;
+	}
+
+	.header.menu-open .overlay {
+		display: block;
+		pointer-events: auto;
+	}
+
+	.header .navegacion {
+		z-index: 1001;
+	}
+}
