@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 import "../../styles/header.css";
 
@@ -69,5 +68,3 @@ export const HeaderNav = (props) => {
 		</header>
 	);
 };
-
-HeaderNav.propTypes = {};

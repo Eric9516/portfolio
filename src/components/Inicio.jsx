@@ -1,14 +1,14 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import "../styles/inicio.css";
+import { ListadoTrabajos } from "./ListadoTrabajos";
 
-export const Inicio = (props) => {
+export const Inicio = () => {
 	return (
 		<div className="inicio">
 			<h1>
-				Hola! Soy <strong>Eric Cantoni</strong>, desarrollador web, ofrezco
-				mis servicios de
+				Hola! Soy <strong>Eric Cantoni</strong>, desarrollador web, ofrezco mis
+				servicios de
 				<strong> programación</strong> y <strong>desarrollo</strong> en todo
 				tipo de proyectos web.
 			</h1>
@@ -19,11 +19,10 @@ export const Inicio = (props) => {
 			<section className="ultimos_proyectos">
 				<h2 className="heading">Algunos de mis proyectos</h2>
 				<p>Estos son algunos de mis trabajos de desarrollo web.</p>
+				<ListadoTrabajos cantidadMostrar={3} />
 			</section>
 
 			<div className="works"></div>
 		</div>
 	);
 };
-
-Inicio.propTypes = {};

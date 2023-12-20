@@ -1,7 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
 
-export const Servicios = (props) => {
+export const Servicios = () => {
 	return (
 		<div>
 			<h1>Servicios</h1>
@@ -23,5 +22,3 @@ export const Servicios = (props) => {
 		</div>
 	);
 };
-
-Servicios.propTypes = {};

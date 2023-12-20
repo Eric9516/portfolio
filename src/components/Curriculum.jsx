@@ -1,7 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
 
-export const Curriculum = (props) => {
+export const Curriculum = () => {
 	return (
 		<div>
 			<h1>Aca tengo que poner el curriculum</h1>
@@ -11,5 +10,3 @@ export const Curriculum = (props) => {
 		</div>
 	);
 };
-
-Curriculum.propTypes = {};

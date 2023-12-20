@@ -1,13 +1,14 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "../../styles/footer.css";
 
-export const Footer = (props) => {
+export const Footer = () => {
 	return (
-		<footer className="footer">
-			Portafolio Eric Cantoni &copy; Frontend developer
-		</footer>
+		<div className="body-container">
+			<div className="main-content">
+			</div>
+			<footer className="footer">
+				Portafolio Eric Cantoni &copy; Frontend developer
+			</footer>
+		</div>
 	);
 };
-
-Footer.propTypes = {};

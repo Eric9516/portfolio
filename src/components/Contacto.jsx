@@ -1,8 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "../styles/contacto.css";
 
-export const Contacto = (props) => {
+export const Contacto = () => {
 	return (
 		<div className="contacto">
 			<h1 className="titulo_principal">Contacto</h1>
@@ -16,5 +15,3 @@ export const Contacto = (props) => {
 		</div>
 	);
 };
-
-Contacto.propTypes = {};
