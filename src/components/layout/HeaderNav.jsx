@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../../styles/header.css";
 
-export const HeaderNav = (props) => {
+export const HeaderNav = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	const handleToggleMenu = () => {

@@ -19,9 +19,8 @@ export const Inicio = () => {
 			<section className="ultimos_proyectos">
 				<h2 className="heading">Algunos de mis proyectos</h2>
 				<p>Estos son algunos de mis trabajos de desarrollo web.</p>
-				<ListadoTrabajos cantidadMostrar={3} />
 			</section>
-
+			<ListadoTrabajos cantidadMostrar={3} />
 			<div className="works"></div>
 		</div>
 	);
