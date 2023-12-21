@@ -1,0 +1,58 @@
+.curriculum {
+	width: 80%;
+	margin: 0 auto;
+	background-color: #eee;
+	box-shadow: 0px 10px 25px #ccc;
+}
+
+.curriculum .contenedor_imagen {
+	width: 300px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.curriculum img {
+	width: 100%;
+}
+
+.curriculum h1 {
+	text-align: center;
+	font-size: 50px;
+}
+
+.acerca_de {
+	background-color: #ddd;
+	padding: 15px;
+}
+
+.educacion {
+	padding: 15px;
+}
+
+.idiomas {
+	background-color: #ddd;
+	padding: 15px;
+}
+
+.curriculum h3 {
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+.curriculum h5 {
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.curriculum ul li {
+	list-style: none;
+}
+
+@media only screen and (max-width: 768px) {
+	.curriculum {
+		width: 95%;
+	}
+}
