@@ -51,8 +51,49 @@
 	list-style: none;
 }
 
+.skills {
+	padding: 15px;
+}
+
+.tecnologias {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+}
+
+.tecnologias svg {
+	font-size: 70px;
+}
+
+.tecnologias svg:hover::before {
+	content: attr(title);
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	padding: 8px;
+	border-radius: 4px;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.tecnologias svg:hover::before {
+	opacity: 1;
+}
+
 @media only screen and (max-width: 768px) {
 	.curriculum {
 		width: 95%;
+	}
+	.tecnologias svg {
+		font-size: 50px;
 	}
 }
