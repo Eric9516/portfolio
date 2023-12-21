@@ -44,6 +44,9 @@ export const Curriculum = () => {
 					</li>
 				</ul>
 			</div>
+			<div className="skills">
+				
+			</div>
 		</div>
 	);
 };

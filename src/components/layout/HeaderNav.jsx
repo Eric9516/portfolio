@@ -27,6 +27,7 @@ export const HeaderNav = () => {
 						<NavLink
 							to="inicio"
 							className={({ isActive }) => (isActive ? "active" : "")}
+							onClick={handleToggleMenu}
 						>
 							Inicio
 						</NavLink>
@@ -35,6 +36,7 @@ export const HeaderNav = () => {
 						<NavLink
 							to="portafolio"
 							className={({ isActive }) => (isActive ? "active" : "")}
+							onClick={handleToggleMenu}
 						>
 							Portafolio
 						</NavLink>
@@ -43,6 +45,7 @@ export const HeaderNav = () => {
 						<NavLink
 							to="servicios"
 							className={({ isActive }) => (isActive ? "active" : "")}
+							onClick={handleToggleMenu}
 						>
 							Servicios
 						</NavLink>
@@ -51,6 +54,7 @@ export const HeaderNav = () => {
 						<NavLink
 							to="curriculum"
 							className={({ isActive }) => (isActive ? "active" : "")}
+							onClick={handleToggleMenu}
 						>
 							Curriculum
 						</NavLink>
@@ -59,6 +63,7 @@ export const HeaderNav = () => {
 						<NavLink
 							to="contacto"
 							className={({ isActive }) => (isActive ? "active" : "")}
+							onClick={handleToggleMenu}
 						>
 							Contacto
 						</NavLink>
