@@ -17,9 +17,31 @@
 	width: 100%;
 }
 
-.curriculum h1 {
+.curriculum .nombre {
+	width: 12ch;
+	white-space: nowrap;
 	text-align: center;
 	font-size: 50px;
+	margin: 0 auto;
+	font-family: "monospace";
+	border-right: 4px solid #fa4529;
+	overflow: hidden;
+	animation: typing 2.5s steps(15), blink 1s steps(1) infinite;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 12ch;
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
 }
 
 .acerca_de {
@@ -69,24 +91,10 @@
 
 .tecnologias svg {
 	font-size: 70px;
+	transition: all 1s;
 }
-
-.tecnologias svg:hover::before {
-	content: attr(title);
-	position: absolute;
-	background-color: rgba(0, 0, 0, 0.8);
-	color: white;
-	padding: 8px;
-	border-radius: 4px;
-	bottom: 100%;
-	left: 50%;
-	transform: translateX(-50%);
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
-}
-
-.tecnologias svg:hover::before {
-	opacity: 1;
+.tecnologias svg:hover {
+	font-size: 100px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -95,5 +103,10 @@
 	}
 	.tecnologias svg {
 		font-size: 50px;
+		transition: all 1s;
+	}
+	.tecnologias svg:hover {
+		font-size: 75px;
+		background-color: #ccc;
 	}
 }
